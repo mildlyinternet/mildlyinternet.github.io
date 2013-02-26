@@ -1,11 +1,13 @@
-CTYPE html>
-<html>
-  <head>
-    <title>Patrick Koperwas Blog</title>
-  </head>
+---
+layout: default
+title: Patrick Koperwas
+---
 
-  <body>
-    <h1>Patrick Koperwas Blog!</h1>
-  </body>
-</html>
-
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

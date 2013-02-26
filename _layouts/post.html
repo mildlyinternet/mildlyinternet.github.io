@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div id="post">
+
+  <div id="post-header">
+    <h2>{{ page.title }}</h2>
+    <div class="date">
+      Posted on {{ page.date | date_to_string }}
+    </div>
+  </div>
+
+  {{ content }}
+</div>
+
