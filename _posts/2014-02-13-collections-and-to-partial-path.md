@@ -2,8 +2,8 @@
 layout: post
 title: Collections and to_partial_path
 ---
-Rendering collections of Active Record models has become very neat with some
-lovely rails shorthand. Calling
+
+Rendering collections of Active Record models is really quite clean. Calling:
 
 {% highlight ruby %}
 <%= render @article.posts %>
@@ -11,15 +11,14 @@ lovely rails shorthand. Calling
 
 Effectively calls:
 {% highlight ruby %}
-<%= render partial: "post/post", locals: { post: post } %>
+<%= render partial: "posts/post", locals: { post: post } %>
 {% endhighlight %}
 
 Internally, the `render` method calls `to_partial_path` on each item of the
-collection of to figure out which partial to render. Active Record models 
-inherit a method which returns a partial name based on the name of the model. 
-However, it is possible to overwrite said behavior. Additionally plain ruby 
-objects are able to implement the same behaviour.
-
+collection to figure out which partial to render (in this case, posts/post).
+ActiveRecord models inherit a method which returns a partial name based on the
+name of the model. However, it is possible to overwrite said behavior. Plain
+Ruby objects are able to implement the same behaviour.
 
 {% highlight ruby %}
 class Article < ActiveRecord::Base
@@ -34,15 +33,25 @@ class Spaceship
   end
 
   def to_partial_path
-    "transports/class/firefly"
+    "transports/firefly"
   end
 end
+
+class Train
+  def to_partial_path
+    "transports/train"
+  end
+end
+
+# In the view
+<%= render @transports %>
 {% endhighlight %}
 
-I found this to be extremely useful in displaying an event feed. I had a
-collection of `events`, each of which had a specific type (Comment, Upload,
-Star, etc.) and each type had a unique partial it needed to render. Using
-`to_partial_path` I was to able avoid writing conditional code.
+Lets use this fact to render out an event feed. Each event has a `type` column
+(comment, star, upload, etc.). Each event in the feed is displayed differently,
+and has a corresponding partial in the `events` folder. Instead of doing a
+switch on type in the view or model, we can take advantage of `to_partial_path`
+to dynamically figure out the correct partial to render.
 
 {% highlight ruby %}
 class Event < ActiveRecord::Base
@@ -54,5 +63,3 @@ end
 ....
 <%= render @events %>
 {% endhighlight %}
-
-
