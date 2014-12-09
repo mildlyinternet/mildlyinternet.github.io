@@ -104,7 +104,8 @@ ul.posts span {
 .post pre {
   background-color: #fafafa;
   border: 1px solid #f0f0f0;
-  font-size: 80%;
+  font-size: 70%;
+  overflow: auto;
   padding: 5px 10px;
 }
 
