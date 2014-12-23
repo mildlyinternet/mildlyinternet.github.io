@@ -9,7 +9,7 @@ title: Patrick Koperwas
     {% assign content = post.content %}
     {% include post_excerpt.html %}
   </div>
-  <h3>Older</h3>
+  <h3>Archive</h3>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
