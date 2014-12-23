@@ -1,0 +1,177 @@
+---
+---
+
+// Globals
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+ }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: white;
+  font-family: "Droid Serif", serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #333332;
+}
+
+// Type
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font: 24px "Merriweather", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font: 24px Verdana, sans-serif;
+  text-align: center;
+  margin: 36px 0;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid #eee;
+}
+
+p {
+  margin: 18px 0;
+  > code {
+    background-color: #fafafa;
+    padding: 3px;
+    font-family: "Source Code Pro", monaco, monospace;
+    font-size: 80%;
+  }
+}
+
+a {
+  color: #268BD2;
+  text-decoration: none;
+
+  &:hover {
+    color: #268BD2;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 18px;
+
+  li {
+    line-height: 28px;
+  }
+
+  span {
+    color: #aaa;
+    font-family: "Source Code Pro", Monaco, monospace;
+    font-size: 80%;
+  }
+}
+
+
+// Layout
+.site {
+  margin: 0 auto;
+  max-width: 620px;
+  padding: 0 18px;
+}
+
+.ribbon {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+// Home
+.main-header {
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Merriweather", sans-serif;
+  margin-bottom: 36px;
+  padding: 12px;
+
+  .right {
+    margin-left: auto;
+    font-size: 12px;
+  }
+
+  a {
+    color: #333;
+    padding-left: 6px;
+
+    &:hover { color: #268BD2; }
+  }
+}
+
+.newest-post {
+  margin-bottom: 18px;
+  padding: 18px 0;
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+// Posts
+.post {
+  header {
+    border-bottom: 1px solid #eee;
+    padding: 0 0 36px 0;
+    text-align: center;
+  }
+
+  .date {
+    color: #888;
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  pre {
+    background-color: #fafafa;
+    border: 1px solid #f0f0f0;
+    font-size: 70%;
+    overflow: auto;
+    padding: 5px 10px;
+  }
+
+}
+
+.about {
+  border-top: 1px solid #eee;
+  margin-top: 72px;
+  padding: 18px 0 36px 0;
+  display: flex;
+  align-items: center;
+
+  .profile-picture {
+    width: 56px;
+    min-width: 56px;
+    margin-right: 18px;
+
+    img {
+      border: 1px solid #ccc;
+      border-radius: 2px;
+    }
+  }
+}
+

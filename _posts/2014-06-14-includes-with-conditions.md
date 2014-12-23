@@ -3,7 +3,7 @@ layout: post
 title: Beware Includes with Conditions
 ---
 
-**N+1 Problem**
+##N+1 Problem
 
 Lets say that you want to print out all of the invoices for each of your
 cusomters. Your code may look like this:
@@ -31,7 +31,7 @@ Invoice Load (0.2ms)  SELECT "invoices".* FROM "invoices"  WHERE "invouces"."cus
 ...
 {% endhighlight %}
 
-**Using Includes**
+##Using Includes
 
 A simple solution to this problem is to simple preload all of the invoices for the cusomters, using an `includes` statement.
 
@@ -46,7 +46,7 @@ Customer Load (1.1ms)  SELECT "customers".* FROM "customers"
 Invoice Load (0.4ms)  SELECT "invoices".* FROM "invoices"  WHERE "invoices"."customer_id" IN (1, 2, 3, 4, 5, 6)
 {% endhighlight %}
 
-**Getting into trouble**
+##Getting into trouble
 Now lets say we only want to show the invoices that are have a status of "Open". We may be tempted to add a `where` condition on our include to do the filtering for us.
 
 {% highlight ruby %}
@@ -78,7 +78,7 @@ FROM "users" LEFT OUTER JOIN "memberships" ON "memberships"."user_id" =
 {% endhighlight %}
 
 The query above, while large, it is still much more performant than dealing
-with N+1 problems. However, once the tables start to get large or your are
+with N+1 problems. However, once the tables start to get large or you are
 returning a large amount of rows, the query like the one above can be
 potentially troublesome. The database returns something like this:
 
@@ -96,8 +96,7 @@ customer_id |   name  | invoice_id | title
 We get some duplication - a customer has_many invoices so every time we load a
 unique invoice we are going to load ALL of the customer data along with it. 
 
-**Double the has_manys**
-Double the has_manys
+##Double the `has_many`
 
 Now, issues arise when you try and eager load data from more than one has_many.
 
@@ -112,7 +111,7 @@ and 10 receipts (250 total). The result set that is returned is not 525
 records, but something closer to 2500 records. Now Rails has to instantiate all
 of that into ActiveRecord objects.
 
-**When is it safe to add where conditions with an includes?**
+##When is it safe to add where conditions with an includes?
 
 Only when conditions are used on the main model
 
