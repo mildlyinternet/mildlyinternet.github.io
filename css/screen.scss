@@ -87,6 +87,11 @@ ul {
   }
 }
 
+blockquote {
+  border-left: 2px solid #eee;
+  font-style: italic;
+  padding: 0 24px;
+}
 
 // Layout
 .site {
@@ -160,7 +165,6 @@ ul {
     overflow: auto;
     padding: 5px 10px;
   }
-
 }
 
 .about {
