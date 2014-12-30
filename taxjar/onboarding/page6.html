@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>TaxJar Rails Application</title>
+   <meta name="author" content="Patrick Koperwas" />
+
+   <link rel="stylesheet" href="/taxjar/normalize.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/taxjar/onboarding/onboarding.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/taxjar/demo2.css" type="text/css" media="screen, projection" />
+
+   <!-- Google Web Fonts -->
+   <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header class="nav-header">
+    <nav>
+      <div>TaxJar Onboarding</div>
+      <div>
+        <a href="/taxjar/onboarding/page5.html">«</a> 
+        <span>6/15</span>
+        <a href="/taxjar/onboarding/page7.html">»</a>
+      </div>
+    </nav>
+  </header>
+  <div class="content-small">
+    <div class="hero">
+      <h1>Analysis</h1>
+    </div>
+    <p>
+      <strong>The Good</strong><br />
+      Super simple sign up process. Clicked Signup and was in the app
+      immediately. From this page connecting my data is simple, I just have to
+      click on the buttons and follow any instructions. There's plenty of
+      options and even one for CSV uploading. The transparent background gives
+      me clues / hints as to what I can expect.
+    </p>
+    <p>
+      <strong>Nitpicks</strong><br />
+      The gray pop up looks and feels just like a "hey there" welcome message,
+      so I didn't bother reading it and just tried to close it. There's quite a
+      bit of available navigation on the page - it does clue me into what I can
+      expect to do - but I can't make use of any it. It is a little
+      distracting.
+    </p>
+    <div class="hero">
+      <h1>Proposition</h1>
+    </div>
+    <p>
+      Make the transition from signup to application ready a little more
+      smooth. I would propose a simple wizard to guide the user through several
+      key actions.
+    </p>
+
+    <p>
+      1. Connecting their account to a cart.
+      <br />
+      2. Updating Business Profile. (skipable)
+      <br />
+      3. Quick guide / tutorial. (skipable)
+    </p>
+
+    <p>
+      Below are some HTML mocks that roughly show what the process could look
+      like. I've gone ahead and stripped away any other navigation, so the user
+      can focus on getting their account ready for use.
+    </p>
+  </div>
+
+  <div class="application-demo">
+    <header class="taxjar-header">
+      <nav class="nav-inner">
+        <div>
+          <img src="/taxjar/images/taxjar.png" height="30px" />
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li>Dashboard</li>
+            <li>Transactions</li>
+            <li>Payment History</li>
+            <li>Account</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <nav class="wizard-steps">
+      <div class="spacer complete">
+      </div>
+      <div class="wizard-step complete">Connect Account</div> 
+      <div class="arrow-right"></div>
+      <div class="wizard-step">Business Profile</div> 
+      <div class="wizard-step">State Nexus</div> 
+      <div class="wizard-step">Finish</div> 
+      <div class="spacer">
+      </div>
+    </nav>
+  </div>
+</body>
+</html>

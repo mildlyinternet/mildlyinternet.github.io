@@ -1,0 +1,78 @@
+---
+---
+
+$green: #64BD25;
+$wizard-complete: #5AAC58;
+
+.application-demo {
+  margin-top: 48px;
+  font-family: "Droid Sans";
+  margin-bottom: 48px;
+  height: 1000px;
+  background-color: white;
+}
+
+.taxjar-header {
+  height: 90px;
+  border-top: 1px solid #ddd;
+  z-index: 100;
+  background-color: #fff;
+
+  .nav-inner {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    width: 960px;
+  }
+
+  .nav-menu {
+    color: #999;
+    font-size: 15px;
+    margin-left: auto;
+
+    ul {
+      list-style: none;
+      
+      > li {
+        display: inline;
+        padding: 0 12px;
+      }
+    }
+  }
+}
+
+.wizard-steps {
+  background-color: #f0f0f0;
+  height: 40px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+
+  .spacer {
+    flex-grow: 1;
+  }
+
+  .wizard-step {
+    width: 200px;
+    line-height: 40px;
+    padding: 0 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+  }
+
+  .complete {
+    background-color: $wizard-complete;
+    color: white;
+  }
+
+  .arrow-right {
+    margin-top: -1px;
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 12px solid $wizard-complete;
+  }
+}
