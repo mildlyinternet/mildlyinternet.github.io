@@ -6,7 +6,7 @@ $green: #64BD25;
 .application-demo {
   margin-top: 48px;
   font-family: "Droid Sans";
-  margin-bottom: 48px;
+  margin-bottom: 100px;
 }
 
 .taxjar-header {
@@ -53,7 +53,7 @@ $green: #64BD25;
   }
 
   .image-placeholder {
-    border: 1px solid #eee;
+    border: 1px solid #ddd;
     border-radius: 4px;
     height: 500px;
     margin-right: 48px;
@@ -133,8 +133,8 @@ $green: #64BD25;
 }
 
 .faq {
-  border-top: 1px solid #eee;
-  padding-top: 48px;
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
   display: block;
   width: 620px;
   margin: 48px auto;

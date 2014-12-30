@@ -16,11 +16,10 @@
 <body>
   <header class="nav-header">
     <nav>
-      <div>TaxJar Onboarding</div>
+    <div><a href="/taxjar/onboarding/">TaxJar Onboarding</a></div>
       <div>
         <a href="/taxjar/onboarding/page5.html">«</a> 
-        <span>6/15</span>
-        <a href="/taxjar/onboarding/page7.html">»</a>
+        <span>6/6</span>
       </div>
     </nav>
   </header>
@@ -64,7 +63,9 @@
     <p>
       Below are some HTML mocks that roughly show what the process could look
       like. I've gone ahead and stripped away any other navigation, so the user
-      can focus on getting their account ready for use.
+      can focus on getting their account ready for use. Again, these are pretty
+      rough outlines of what could be there. But they clearly tell the user
+      exactly what to do.
     </p>
   </div>
 
@@ -75,12 +76,7 @@
           <img src="/taxjar/images/taxjar.png" height="30px" />
         </div>
         <div class="nav-menu">
-          <ul>
-            <li>Dashboard</li>
-            <li>Transactions</li>
-            <li>Payment History</li>
-            <li>Account</li>
-          </ul>
+          TaxJar Account Setup
         </div>
       </nav>
     </header>
@@ -91,10 +87,151 @@
       <div class="arrow-right"></div>
       <div class="wizard-step">Business Profile</div> 
       <div class="wizard-step">State Nexus</div> 
+      <div class="wizard-step">Tutorial</div> 
       <div class="wizard-step">Finish</div> 
       <div class="spacer">
       </div>
     </nav>
+
+    <section class="wizard-content">
+      <div class="step-header">
+        <h1>Step 1: Connect an Account</h1>
+        <p>
+          Hey Patrick! Thanks for signing up for TaxJar. Some meaningful
+          message about how TaxJar will help them file their taxes easier,
+          faster and with greater accuracy. We want to remind the user why they
+          signed up for this product. Then a brief explanation of why they need
+          to connect an account - what will it do / what effect will it have.
+          We want to explain why we are asking the user to do these actions.
+        </p>
+      </div>
+      <h2>select an account to link with</h2>
+      <div class="account-cards">
+        <div class="card">
+          <div><img src="/taxjar/images/logos/amazon.jpg"></div>
+          <div class="label">Amazon</div>
+        </div>
+        <div class="card">
+          <div><img src="/taxjar/images/logos/shopify.jpg"></div>
+          <div class="label">Shopify</div>
+        </div>
+        <div class="card">
+          <div><img src="/taxjar/images/logos/magento.png"></div>
+          <div class="label">Magento</div>
+        </div>
+        <div class="card">
+          <div><img src="/taxjar/images/logos/etsy.jpg"></div>
+          <div class="label">Etsy</div>
+        </div>
+        <div class="card">
+          <div><img src="/taxjar/images/logos/paypall.jpg"></div>
+          <div class="label">Paypal</div>
+        </div>
+        <div class="card">
+          <div><img src="/taxjar/images/logos/bigcommerce.png"></div>
+          <div class="label">BigCommerce</div>
+        </div>
+        <div class="card">
+          <div><img src="/taxjar/images/logos/square.jpg"></div>
+          <div class="label">Square</div>
+        </div>
+      </div>
+
+      <h2>don't see your provider? upload a CSV instead</h2>
+      <div class="account-cards">
+        <div class="card">
+          <div><img src="/taxjar/images/logos/csv.png"></div>
+          <div class="label">Upload CSV</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Part two -->
+  <div class="application-demo">
+    <header class="taxjar-header">
+      <nav class="nav-inner">
+        <div>
+          <img src="/taxjar/images/taxjar.png" height="30px" />
+        </div>
+        <div class="nav-menu">
+          TaxJar Account Setup
+        </div>
+      </nav>
+    </header>
+    <nav class="wizard-steps">
+      <div class="spacer complete">
+      </div>
+      <div class="wizard-step complete">Connect Account</div> 
+      <div class="wizard-step complete">Business Profile</div> 
+      <div class="wizard-step complete">State Nexus</div> 
+      <div class="arrow-right"></div>
+      <div class="wizard-step">Tutorial</div> 
+      <div class="wizard-step">Finish</div> 
+      <div class="spacer">
+      </div>
+    </nav>
+
+      <div class="connect">
+        <h1>
+          Step 3: Select a State Nexus
+          <br />
+          <small><a href="#">Information on choosing a Nexus</a></small>
+        </h1>
+      </div>
+
+      <div class="connection-information">
+        <div class="left">
+          <p><strong>Add a new Nexus State</strong></p>
+          <div class="input-group">
+            <label>State:</label>
+            <input type="text" class="signup-input"></input>
+          </div>
+
+          <div class="input-group">
+            <label>Payment Schedule:</label>
+            <input type="text" class="signup-input"></input>
+          </div>
+
+          <div class="input-group">
+            <label>State Registered Business Name:</label>
+            <input type="text" class="signup-input"></input>
+          </div>
+
+          <div class="input-group">
+            <label>State Business Tax ID:</label>
+            <input type="text" class="signup-input"></input>
+          </div>
+
+          <div class="input-group">
+            <label>Nexus Established:</label>
+            <input type="text" class="signup-input"></input>
+          </div>
+        </div>
+
+        <div class="right">
+          <p><strong>Existing Business</strong></p>
+
+          <div class="map">
+            <img src="/taxjar/images/map.png" />
+          </div>
+          <p>
+            My Small Business<br />
+            301 Market Street<br />
+            San Diego, CA 92101<br />
+            888-888-1234
+          </p>
+        </div>
+      </div>
+      <div class="connection-information progress-links">
+        <div class="cta-button cancel">
+          <a href="#">Go Back</a>
+        </div>
+        <div class="cta-button">
+          <a href="#">Next Step</a>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

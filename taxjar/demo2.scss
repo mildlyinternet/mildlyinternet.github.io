@@ -2,13 +2,13 @@
 ---
 
 $green: #64BD25;
+$blue: #268BD2;
 $wizard-complete: #5AAC58;
 
 .application-demo {
   margin-top: 48px;
   font-family: "Droid Sans";
   margin-bottom: 48px;
-  height: 1000px;
   background-color: white;
 }
 
@@ -75,4 +75,166 @@ $wizard-complete: #5AAC58;
     border-bottom: 20px solid transparent;
     border-left: 12px solid $wizard-complete;
   }
+}
+
+.wizard-content {
+  width: 960px;
+  margin: 0 auto;
+
+  .step-header {
+    margin: 48px auto;
+    width: 550px;
+    p { margin: 0; padding: 0; }
+  }
+
+  .account-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 48px;
+
+    .card {
+      width: 200px;
+      min-width: 200px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      box-shadow: 0 0 1px rgba(0,0,0,0.05);
+      height: 185px;
+      margin: 20px;
+      padding: 12px;
+      position: relative;
+      text-align: center;
+      transition: all 0.25s ease;
+
+      &:hover {
+        cursor: pointer;
+        border-color: #ddd;
+        background-image: -webkit-linear-gradient(top, #fff, #fafafa);
+        transition: all 0.25s ease;
+      }
+
+      img {
+        max-width: 100px;
+        max-height: 80px;
+      }
+
+      .label {
+        position: absolute;
+        bottom: 36px;
+        width: 100%;
+        left: 0;
+        font-weight: 700;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+.connect {
+  width: 620px;
+  border-bottom: 1px solid #ddd;
+  margin: 48px auto 24px auto;
+
+  small { 
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+  }
+}
+
+.connection-information {
+  width: 620px;
+  margin: 0 auto;
+  display: flex;
+
+  h2 {
+    text-align: left;
+    font-family: "Droid Sans";
+    font-size: 18px;
+  }
+
+  ol {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  p { padding: 0; margin: 0; }
+
+  .left {
+    width: 320px;
+    padding: 0 36px 0 0;
+    border-right: 1px solid #ddd;
+  }
+
+  .right {
+    padding-left: 36px;
+    line-height: 22px;
+
+    .map {
+      img {
+        max-width: 265px;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+}
+label {
+  display: block;
+  font-size: 14px;
+}
+
+.input-group {
+  margin-bottom: 12px;
+}
+
+.signup-input {
+  padding: 8px 4px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  display: block;
+  font-size: 14px;
+
+  &:focus {
+    outline: none;
+    border-color: $green;
+  }
+}
+
+.cta-button {
+  margin: 48px 0;
+  text-align: right;
+  margin-left: 12px;
+  display: inline-block;
+
+  a {
+    background-color: $wizard-complete;
+    border-radius: 2px;
+    border: 1px solid darken($wizard-complete, 10%);
+    color: white;
+    font-family: Verdana;
+    padding: 18px 24px;
+    transition: background-color 0.25s ease;
+
+    &:hover {
+      background-color: darken($wizard-complete, 5%);
+      transition: background-color 0.25s ease;
+    }
+  }
+
+  &.cancel {
+    a {
+      background-color: $blue;
+      border: 1px solid darken($blue, 10%);
+
+      &:hover {
+        background-color: darken($blue, 10%);
+      }
+    }
+  }
+}
+
+.progress-links {
+  display: block;
+  text-align: right;
 }
