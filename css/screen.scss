@@ -94,6 +94,8 @@ blockquote {
   padding: 0 24px;
 }
 
+
+
 // Layout
 .site {
   margin: 0 auto;
@@ -159,6 +161,11 @@ blockquote {
     font-style: italic;
   }
 
+  img {
+    width: 940px;
+    margin: 24px 0 24px -160px;
+  }
+
   pre {
     background-color: #fafafa;
     border: 1px solid #f0f0f0;
@@ -186,4 +193,3 @@ blockquote {
     }
   }
 }
-
