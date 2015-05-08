@@ -4,6 +4,7 @@
 // Globals
 $blue: #268BD2;
 $dark-gray: #333332;
+$body-width: 620px;
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -99,7 +100,7 @@ blockquote {
 // Layout
 .site {
   margin: 0 auto;
-  max-width: 620px;
+  max-width: $body-width;
   padding: 0 18px;
 }
 
@@ -113,13 +114,13 @@ blockquote {
 // Home
 .main-header {
   align-items: center;
-  border-bottom: 1px solid #eee;
   display: flex;
   font-size: 22px;
   font-weight: bold;
   font-family: "Merriweather", sans-serif;
-  margin-bottom: 36px;
+  margin: 36px auto 72px auto;
   padding: 12px;
+  width: $body-width;
 
   .right {
     margin-left: auto;
