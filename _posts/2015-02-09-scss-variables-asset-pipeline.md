@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Persisting SASS Variables in the Asset Pipeline
+category: code
 ---
 
 Here's a technique for setting up your Rails app to share SCSS variables across

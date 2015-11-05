@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bower & the Asset Pipeline
+category: code
 ---
 
 One of my biggest gripes with Rails as of late has been the way third party

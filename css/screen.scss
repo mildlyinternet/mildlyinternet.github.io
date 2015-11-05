@@ -4,6 +4,7 @@
 // Globals
 $blue: #268BD2;
 $dark-gray: #333332;
+$muted: #888;
 $body-width: 620px;
 
 *, *:before, *:after {
@@ -24,10 +25,13 @@ html, body {
 body {
   -webkit-font-smoothing: antialiased;
   background-color: white;
-  font-family: "Droid Serif", serif;
-  font-size: 16px;
-  line-height: 28px;
+  border-top: 3px solid $blue;
   color: $dark-gray;
+  font-family: "Droid Serif", serif;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 16px auto;
+  width: 95%;
 }
 
 // Type
@@ -42,7 +46,7 @@ h1 {
 }
 
 h2 {
-  font: 24px Verdana, sans-serif;
+  font: 28px Verdana, sans-serif;
   text-align: center;
   margin: 36px 0;
 }
@@ -105,7 +109,7 @@ blockquote {
 }
 
 .ribbon {
-  color: #888;
+  color: $muted;
   font-size: 14px;
   margin-bottom: 36px;
   text-align: center;
@@ -125,6 +129,7 @@ blockquote {
   .right {
     margin-left: auto;
     font-size: 12px;
+    color: $muted;
   }
 
   a {
@@ -157,7 +162,7 @@ blockquote {
   }
 
   .date {
-    color: #888;
+    color: $muted;
     font-size: 12px;
     font-style: italic;
   }

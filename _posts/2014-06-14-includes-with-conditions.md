@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Beware Includes with Conditions
+category: code
 ---
 
 ##N+1 Problem

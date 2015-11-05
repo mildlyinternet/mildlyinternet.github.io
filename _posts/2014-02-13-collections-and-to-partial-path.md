@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Collections and to_partial_path
+category: code
 ---
 
 Rendering collections of Active Record models is really quite clean. Calling:

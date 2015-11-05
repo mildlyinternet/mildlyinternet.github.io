@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Vancouver
+category: life
 ---
 
 Recently I took a short trip out to Vancouver, Canada. Saw the Canucks beat on

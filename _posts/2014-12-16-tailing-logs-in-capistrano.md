@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tailing Logs in Capistrano
+category: code
 ---
 
 Quite often you might find yourself wanting to tail the logs for your remote
