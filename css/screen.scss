@@ -79,11 +79,21 @@ a {
 }
 
 ul {
-  list-style-type: none;
-  margin-bottom: 18px;
+  margin: 18px 0 18px 36px;
 
   li {
     line-height: 28px;
+    margin-bottom: 18px;
+  }
+
+}
+
+.posts {
+  list-style: none;
+  margin: 0;
+
+  li {
+    margin-bottom: 0;
   }
 
   span {
