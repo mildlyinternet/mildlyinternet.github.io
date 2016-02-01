@@ -15,7 +15,7 @@ Meetings have a tendency to:
 
   * Go off topic quickly.
   * Waste time finding the right words / waiting for a turn to speak.
-  * They transmit information at an incredible inefficient pace.
+  * They transmit information at an incredibly inefficient pace.
   * Rarely deal with real things. They are about words and speaking, not action.
   * Fill the full amount of time they were scheduled for - even if it's double
     what is required.
