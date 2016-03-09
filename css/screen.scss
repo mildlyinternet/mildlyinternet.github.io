@@ -107,34 +107,29 @@ blockquote {
 // Home
 .main-header {
   align-items: baseline;
-  background-color: #333;
   border-top: 4px solid $red;
   display: flex;
+  font-family: "Merriweather", sans-serif;
   font-size: 22px;
   font-weight: 700;
-  font-family: "Merriweather", sans-serif;
-  padding: 24px 24px;
   margin-bottom: 72px;
+  padding: 24px 24px;
 
   .content {
-    width: $body-width;
     margin: 0 auto;
     padding: 0 18px;
+    width: $body-width;
   }
 
   .subline {
-    margin-left: 12px;
+    color: $muted;
     font-size: 12px;
     font-weight: 400;
-    color: $muted;
+    margin-left: 12px;
   }
 
   a {
-    color: $white;
-
-    &:hover {
-      color: $white;
-    }
+    color: #333;
   }
 }
 
