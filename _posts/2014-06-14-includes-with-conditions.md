@@ -2,6 +2,8 @@
 layout: post
 title: Beware Includes with Conditions
 category: code
+description: "Rails ActiveRecord tip - avoid using conditions in your includes
+statements"
 ---
 
 ##N+1 Problem

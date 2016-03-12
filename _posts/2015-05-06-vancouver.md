@@ -2,6 +2,7 @@
 layout: post
 title: Vancouver
 category: life
+description: "Pictures of my Vancouver Road Trip"
 ---
 
 Recently I took a short trip out to Vancouver, Canada. Saw the Canucks beat on

@@ -2,6 +2,7 @@
 layout: post
 title: Rust with Ruby
 category: code
+description: "Using Rust to optimize hot spots in your Ruby code"
 ---
 
 I've been writing a bit of Rust lately and I was super curious to see if I could

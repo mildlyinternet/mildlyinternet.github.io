@@ -2,6 +2,7 @@
 layout: post
 title: Oregon Coast
 category: life
+description: "Pictures of my Oregon Road Trip"
 ---
 
 Recently decided to drive up the Oregon coast as part of a longer road trip from 

@@ -2,6 +2,7 @@
 layout: post
 title: How Expensive Are Your Meetings?
 category: business
+description: "How much are meeting costing your business?"
 ---
 
 I think too few people realize how much money and productivity their meetings

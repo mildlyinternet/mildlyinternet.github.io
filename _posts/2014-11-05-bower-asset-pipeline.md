@@ -2,6 +2,7 @@
 layout: post
 title: Bower & the Asset Pipeline
 category: code
+description: "Using Bower inside the Rails Asset Pipeline"
 ---
 
 One of my biggest gripes with Rails as of late has been the way third party

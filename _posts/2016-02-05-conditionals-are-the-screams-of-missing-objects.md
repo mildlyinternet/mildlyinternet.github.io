@@ -2,6 +2,9 @@
 layout: post
 title: Conditionals Are the Screams of Missing Objects
 category: code
+description: "In object orient programming with dislike the idea of type
+checking, we prefer to just send messages. Learn to listen to your code - it's
+probably trying to tell you something."
 ---
 
 In object oriented programming we dislike the idea of type checking -

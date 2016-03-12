@@ -2,6 +2,8 @@
 layout: post
 title: Skip the Product Roadmap
 category: business
+description: "Product Roadmaps are dangerous - don't pin yourself down to a
+schedule that's bound to change."
 ---
 
 Product Roadmaps are dangerous. By committing to a long term roadmap (several

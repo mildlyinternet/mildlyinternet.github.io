@@ -3,6 +3,7 @@ layout: post
 title: Profiling Rails Boot Time
 category: code
 author: patrick
+description: "Profiling Rails boot time"
 ---
 
 Is your Rails app starting to feel sluggish when running common start up

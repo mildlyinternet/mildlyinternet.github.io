@@ -2,6 +2,7 @@
 layout: post
 title: Collections and to_partial_path
 category: code
+description: "Rails collections and to_partial_path method"
 ---
 
 Rendering collections of Active Record models is really quite clean. Calling:
