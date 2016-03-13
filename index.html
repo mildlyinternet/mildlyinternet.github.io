@@ -2,18 +2,23 @@
 layout: default
 title: Patrick Koperwas
 ---
-<section class="home">
-  {% for post in site.posts %}
-  <article class="post-excerpt">
-    <h1><a href={{ post.url }}>{{ post.title }}</a></h1>
-    {{ post.excerpt }}
-    <a href="{{ post.url }}" class="read-more">Read more...</a>
-    <div class="info">
-      <span class="hashtag">#</span>
-      {{ post.date | date: '%B %d, %Y'  }}
-      <span class="category">| {{ post.category }}</span>
-    </div>
-  </article>
-  {% endfor %}
-  {% include footer.html %}
+
+{% include main_header.html %}
+
+<div class="site">
+  <section class="home">
+    {% for post in site.posts %}
+    <article class="post-excerpt">
+      <h1><a href={{ post.url }}>{{ post.title }}</a></h1>
+      {{ post.excerpt }}
+      <a href="{{ post.url }}" class="read-more">Read more...</a>
+      <div class="info">
+        <span class="hashtag">#</span>
+        {{ post.date | date: '%B %d, %Y'  }}
+        <span class="category">| {{ post.category }}</span>
+      </div>
+    </article>
+    {% endfor %}
+    {% include footer.html %}
+  </section>
 </div>

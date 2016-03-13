@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -69,7 +69,7 @@ p {
 }
 
 code {
-  background-color: #f5f5f5;
+  background-color: #fcfcfc;
   font-family: "Source Code Pro", Monaco, monospace;
   font-size: 90%;
 }
@@ -107,14 +107,12 @@ blockquote {
 
 // Home
 .main-header {
-  align-items: baseline;
   border-top: 4px solid $red;
-  display: flex;
   font-family: "Merriweather", sans-serif;
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 72px;
-  padding: 24px 24px;
+  padding: 48px 24px;
 
   .content {
     margin: 0 auto;
@@ -122,15 +120,35 @@ blockquote {
     width: $body-width;
   }
 
-  .subline {
-    color: $muted;
-    font-size: 12px;
-    font-weight: 400;
-    margin-left: 12px;
+  .home-link {
+    color: #333;
   }
 
+  .other-links {
+    float: right;
+
+    a {
+      font-family: "Fira Sans";
+      font-size: 14px;
+      font-weight: 400;
+      margin-left: 12px; 
+    }
+  }
+}
+
+.main-header-muted {
+  width: $body-width;
+  font-family: "Merriweather", sans-serif;
+  margin: 32px auto 64px auto;
+  padding: 0 18px;
+  font-size: 12px;
+
   a {
-    color: #333;
+    color: #aaa;
+
+    &:hover {
+      color: $red;
+    }
   }
 }
 
@@ -191,6 +209,7 @@ blockquote {
   header {
     padding: 0 0 12px 0;
     font-weight: 400;
+    margin-bottom: 48px;
   }
 
   img {
@@ -230,6 +249,16 @@ blockquote {
   }
 }
 
+.about-me {
+  font-family: "Source Code Pro";
+  font-size: 14px;
+}
+
+.screencasts {
+  font-family: "Source Code Pro";
+  font-size: 14px;
+}
+
 @media (max-width: 560px) {
   body,
   .site,
@@ -241,20 +270,24 @@ blockquote {
   .main-header {
     padding: 5% 0;
 
-    .content {
+    .other-links {
+      float: none;
       a {
-        font-size: 2.0rem;
-      }
-      em {
-        display: block;
-        margin: 0;
-        font-size: 0.85rem;
+        margin-left: 0;
+        margin-right: 8px;
       }
     }
   }
 
   a {
     word-wrap: break-word;
+  }
+
+  .post {
+    img {
+      max-width: 100%;
+      margin: 0;
+    }
   }
 
   .post .highlight {

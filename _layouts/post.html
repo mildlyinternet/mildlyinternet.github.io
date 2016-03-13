@@ -2,16 +2,23 @@
 layout: default
 ---
 
-<article class="post">
-  <header>
-    <h1>{{ page.title }}</h1>
-    <div class="date">
-      <span>{{ page.date | date: "%B %-d, %Y" }}</span>
-      <span class="category"> | {{ page.category }}</span>
-    </div>
-  </header>
+<header class="main-header-muted">
+  <a href="/" class="home-link">Mildly Internet</a>
+</header>
 
-  {{ content }}
-</article>
+<div class="site">
+  <article class="post">
+    <header>
+      <div class="date">
+        <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+        <span class="category"> | {{ page.category }}</span>
+      </div>
+      <h1>{{ page.title }}</h1>
+    </header>
 
-{% include footer.html %}
+    {{ content }}
+  </article>
+
+  {% include footer.html %}
+</div>
+
