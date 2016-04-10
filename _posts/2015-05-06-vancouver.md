@@ -1,4 +1,5 @@
 ---
+author: patrick
 layout: post
 title: Vancouver
 category: life

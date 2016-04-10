@@ -1,4 +1,5 @@
 ---
+author: patrick
 layout: post
 title: Tailing Logs in Capistrano
 category: code

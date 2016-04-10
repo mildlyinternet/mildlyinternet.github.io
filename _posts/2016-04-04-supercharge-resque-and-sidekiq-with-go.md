@@ -5,6 +5,7 @@ category: code
 description: "Process background job queues faster by offloading jobs to Go.
 Take advantage of Go's speed and low memory usage to replace slow or IO bound
 Ruby Workers."
+author: patrick
 ---
 
 Process background job queues faster by offloading jobs to Go. Take advantage of

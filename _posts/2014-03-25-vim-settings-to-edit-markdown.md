@@ -1,4 +1,5 @@
 ---
+author: patrick
 layout: post
 title: Useful Vim Settings to Edit Markdown
 category: code

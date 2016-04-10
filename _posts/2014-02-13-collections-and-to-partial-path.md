@@ -1,4 +1,5 @@
 ---
+author: patrick
 layout: post
 title: Collections and to_partial_path
 category: code

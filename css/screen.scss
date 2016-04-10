@@ -232,10 +232,13 @@ blockquote {
 
 .about {
   border-top: 1px solid #eee;
-  margin-top: 72px;
-  padding: 18px 0 36px 0;
+  margin: 72px 0 0 0;
+  padding: 36px 0;
   display: flex;
-  align-items: center;
+
+  p {
+    margin: 0
+  }
 
   .profile-picture {
     width: 56px;
@@ -243,14 +246,27 @@ blockquote {
     margin-right: 18px;
 
     img {
-      border: 1px solid #ccc;
-      border-radius: 2px;
+      border-radius: 5px;
+      margin-top: 5px;
     }
   }
 }
 
+.about-devlocker {
+  border-top: 1px solid #eee;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 36px;
+  color: #999;
+  margin: 36px 0;
+
+  p {
+    margin: 0;
+  }
+}
+
 .about-me {
-  font-family: "Source Code Pro";
+  margin-top: 32px;
   font-size: 14px;
 }
 

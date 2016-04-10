@@ -1,4 +1,5 @@
 ---
+author: patrick
 layout: post
 title: Conditionals Are the Screams of Missing Objects
 category: code

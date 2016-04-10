@@ -1,4 +1,5 @@
 ---
+author: patrick
 layout: post
 title: Rust with Ruby
 category: code

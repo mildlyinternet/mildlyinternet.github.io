@@ -1,4 +1,5 @@
 ---
+author: patrick
 layout: post
 title: Persisting SASS Variables in the Asset Pipeline
 category: code

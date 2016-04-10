@@ -1,0 +1,14 @@
+patrick:
+  display_name: Patrick Koperwas
+  description: Web developer based in Seattle. Working mostly with Rails, Javascript and Go. Loves donuts, animated gifs, Vim and wearing slippers while working.
+  short_name: patrick
+  twitter: https://twitter.com/patkoperwas
+  github: https://github.com/patkoperwas
+  image_path: "/images/patrick.jpeg"
+matt:
+  display_name: Matt Casper
+  description: Obssessed with running, coffee, and software performance. Lives in San Diego, CA. Avid Vim user.
+  short_name: matt
+stock:
+  display_name: Michael Stock
+  short_name: stock

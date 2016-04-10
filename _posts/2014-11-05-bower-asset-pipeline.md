@@ -1,4 +1,5 @@
 ---
+author: patrick
 layout: post
 title: Bower & the Asset Pipeline
 category: code

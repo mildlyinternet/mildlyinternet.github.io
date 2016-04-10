@@ -1,4 +1,5 @@
 ---
+author: patrick
 layout: post
 title: Profiling Rails Boot Time
 category: code
