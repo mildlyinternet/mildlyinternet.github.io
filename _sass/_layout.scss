@@ -1,0 +1,46 @@
+// Site Styles
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+ }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: $dark-gray;
+  font-family: $body-font-family;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+// Layout
+.site {
+  margin: 0 auto;
+  max-width: $body-width;
+  padding: 0 $side-gutter;
+}
+
+
+@media (max-width: 560px) {
+  body,
+  .site,
+  .main-header-muted,
+  .content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  a {
+    word-wrap: break-word;
+  }
+}

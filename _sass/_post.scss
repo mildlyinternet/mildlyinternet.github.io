@@ -1,0 +1,44 @@
+.post {
+  .date {
+    color: $muted;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+
+  header {
+    padding: 0 0 12px 0;
+    font-weight: 400;
+    margin-bottom: 48px;
+  }
+
+  img {
+    width: 940px;
+    margin: 24px -40%;
+
+    @media (max-width: $breakpoint-mobile) {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+
+  pre {
+    border: 1px solid #f0f0f0;
+    font-size: 90%;
+    overflow: auto;
+    padding: 5px 10px;
+  }
+
+  .highlight {
+    line-height: 18px;
+    margin: 0 -65px 18px -65px;
+
+    @media (max-width: $breakpoint-small) {
+      margin: 0;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      margin: 0;
+    }
+  }
+}
+

@@ -1,0 +1,78 @@
+h1, h2, h3, h4, h5, h6 {
+  font-size: 24px;
+  font-family: $headings-font-family;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 36px 0;
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid #eee;
+}
+
+p {
+  margin: 18px 0;
+  > code {
+    padding: 3px;
+  }
+}
+
+code {
+  background-color: #fcfcfc;
+  font-family: $monospace-font-family;
+  font-size: 90%;
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+ul {
+  margin: 18px 0 18px 36px;
+
+  li {
+    line-height: 28px;
+    margin-bottom: 18px;
+  }
+}
+
+blockquote {
+  border-left: 2px solid $red;
+  font-style: italic;
+  padding: 0 12px;
+}
+
+
+// Utility Classes
+.hashtag {
+  color: $red;
+}
+
+.category {
+  color: $red;
+}
+
+.info {
+  color: $muted;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-top: 12px;
+  text-transform: uppercase;
+}

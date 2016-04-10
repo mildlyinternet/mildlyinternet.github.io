@@ -1,0 +1,51 @@
+.main-header {
+  border-top: 4px solid $red;
+  font-family: $headings-font-family;
+  margin-bottom: 48px;
+  padding: 48px 0;
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 5% 0;
+  }
+
+  .content {
+    margin: 0 auto;
+    padding: 0 $side-gutter;
+    width: $body-width;
+  }
+
+  .home-link {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .other-links {
+    float: right;
+
+    @media (max-width: $breakpoint-mobile) {
+    }
+
+    a {
+      font-family: $body-font-family;
+      margin-left: 12px;
+    }
+  }
+}
+
+.main-header-muted {
+  font-family: "Merriweather", sans-serif;
+  font-size: 12px;
+  margin: 24px auto;
+  padding: 24px $side-gutter;
+  width: $body-width;
+
+  a {
+    color: $muted;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
