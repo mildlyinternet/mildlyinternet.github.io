@@ -12,7 +12,7 @@ Process background job queues faster by offloading jobs to Go. Take advantage of
 Go's speed and low memory usage to replace slow or IO bound Ruby Workers.
 
 Certain types of jobs can be very computation heavy - calculating the product of
-large matrices, solving puzzles ([sudoku]({% post_url 2016-02-03-rust-with-ruby
+large matrices, solving puzzles ([Sudoku]({% post_url 2016-02-03-rust-with-ruby
 %})), etc. Or be very simple but occur very often. For example on every
 page load you might create a job to post the user data and url to a third party
 analytics service (this might happen a billion+ times a month).
