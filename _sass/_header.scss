@@ -24,11 +24,12 @@
     float: right;
 
     @media (max-width: $breakpoint-mobile) {
+      float: none;
     }
 
     a {
       font-family: $body-font-family;
-      margin-left: 12px;
+      margin-right: 12px;
     }
   }
 }
@@ -39,6 +40,14 @@
   margin: 24px auto;
   padding: 24px $side-gutter;
   width: $body-width;
+
+  &.header-series {
+    width: 960px;
+
+    @media (max-width: 960px) {
+      width: $body-width;
+    }
+  }
 
   a {
     color: $muted;

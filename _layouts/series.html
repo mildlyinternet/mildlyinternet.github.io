@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+<header class="main-header-muted header-series">
+  <a href="/" class="home-link">Mildly Internet</a>
+</header>
+
+<div class="series">
+  <div class="site">
+    <article class="post">
+      <header>
+        <div class="date">
+          <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+          <span class="category"> | {{ page.categories[0] }}</span>
+        </div>
+        <h1>{{ page.title }}</h1>
+      </header>
+
+      <div class="split">
+        <div class="content">
+          {{ content }}
+        </div>
+
+        <nav class="series-timeline">
+          {% assign series = site.data.series[page.series] %}
+
+          <h4>Series: {{ series.name }}</h4>
+          {% assign posts = (site.categories.[series.lower] | sort: "order") %}
+          {% for post in posts %}
+            <div class="timeline-entry">
+              <div class="timeline-bullet {% if page.id == post.id %} active {% endif %}"></div>
+              <div><a href="{{ post.url }}">{{ post.title }}</a></div>
+            </div>
+          {% endfor %}
+        </nav>
+      </div>
+    </article>
+  </div>
+  <div class="series-bottom-links">
+    {% for post in posts %}
+      {% if post.id == page.id %}
+        {% assign prev_i = forloop.index0 | minus: 1 %}
+        {% assign prev = posts[prev_i] %}
+        {% assign next_i = forloop.index0 | plus: 1 %}
+        {% assign next = posts[next_i] %}
+
+        <div>
+          {% if forloop.first %}
+          {% else %}
+            Previous: <a href="{{ prev.url }}">{{ prev.title }}</a>
+          {% endif %}
+        </div>
+
+        <div class="next">
+          {% if forloop.last %}
+          <span class="muted">You've reached the end</span>
+          {% else %}
+            Next up: <a href="{{ next.url }}">{{ next.title }}</a>
+          {% endif %}
+        </div>
+
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  {% include series_footer.html %}
+</div>
+

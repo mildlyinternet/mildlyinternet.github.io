@@ -30,11 +30,48 @@ body {
   padding: 0 $side-gutter;
 }
 
+.series {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0;
+
+  .site {
+    margin: 0;
+  }
+
+  .split {
+    display: flex;
+
+    .content {
+      margin-right: 64px;
+      min-width: $body-width;
+      width: $body-width;
+
+      @media (max-width: 560px) {
+        width: 100%;
+        min-width: 100%;
+        margin: 0;
+      }
+    }
+  }
+
+  @media (max-width: 960px) {
+    .split {
+      display: inherit;
+    }
+
+    .site {
+      margin: 0 auto;
+    }
+  }
+}
 
 @media (max-width: 560px) {
   body,
   .site,
   .main-header-muted,
+  .header-series,
+  .series,
   .content {
     width: 100%;
     max-width: 100%;

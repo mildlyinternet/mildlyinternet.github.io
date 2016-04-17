@@ -1,4 +1,5 @@
-.about {
+.about,
+.series-footer {
   border-top: 1px solid #eee;
   display: flex;
   margin: 72px 0 0 0;
@@ -33,3 +34,34 @@
   }
 }
 
+.series-bottom-links {
+  border-top: 1px solid #eee;
+  margin: 36px $side-gutter 0 $side-gutter;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+
+  .next {
+    margin-left: auto;
+  }
+}
+
+.series-footer {
+  margin: 0 $side-gutter 32px $side-gutter;
+
+  @media (max-width: 560px) {
+    display: block;
+  }
+
+  .about {
+    border-top: none;
+    margin: 0;
+    padding: 0;
+    flex: 3;
+  }
+
+  .series-info {
+    display: flex;
+    flex: 2;
+  }
+}

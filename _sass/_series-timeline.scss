@@ -1,0 +1,42 @@
+.series-timeline {
+  color: #666;
+  font-size: 12px;
+  min-width: 300px;
+  padding: 16px 32px;
+  width: 300px;
+
+  a {
+    color: #666;
+    display: block;
+    max-width: 235px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  .timeline-entry {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #ddd;
+  }
+
+  .timeline-bullet {
+    background-color: $white;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    height: 12px;
+    margin-left: -6px;
+    margin-right: 8px;
+    width: 12px;
+    min-width: 12px;
+
+    &.active {
+      border-color: $red;
+    }
+  }
+}
+

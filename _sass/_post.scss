@@ -15,6 +15,11 @@
     width: 940px;
     margin: 24px -40%;
 
+    @media (max-width: 940px) {
+      max-width: 100%;
+      margin: 0;
+    }
+
     @media (max-width: $breakpoint-mobile) {
       max-width: 100%;
       margin: 0;

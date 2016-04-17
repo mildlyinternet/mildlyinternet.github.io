@@ -6,6 +6,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 24px;
   font-weight: 700;
+
+  &.spaced {
+    margin: 36px 0;
+  }
 }
 
 h2 {
@@ -18,6 +22,12 @@ h3 {
   font-size: 18px;
   letter-spacing: 1px;
   margin-bottom: 36px;
+}
+
+h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 16px;
 }
 
 p {
@@ -73,4 +83,8 @@ blockquote {
   letter-spacing: 1px;
   margin-top: 12px;
   text-transform: uppercase;
+}
+
+.muted {
+  color: $muted;
 }
