@@ -9,6 +9,8 @@ title: Mildly Internet
  <section class="series-thumbnails">
     {% for series_hash in site.data.series %}
       {% assign series = series_hash[1] %}
+      {% assign posts = (site.categories.[series.lower] | sort: "order") %}
+
     {% endfor %}
   </section>
 
