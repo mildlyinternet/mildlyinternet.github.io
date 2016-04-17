@@ -8,6 +8,7 @@ title: Mildly Internet
 <div class="site">
  <section class="series-thumbnails">
     {% for series_hash in site.data.series %}
+      {% assign series = series_hash[1] %}
     {% endfor %}
   </section>
 
