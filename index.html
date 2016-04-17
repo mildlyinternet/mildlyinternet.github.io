@@ -9,16 +9,9 @@ title: Mildly Internet
  <section class="series-thumbnails">
     {% for series_hash in site.data.series %}
       {% assign series = series_hash[1] %}
-      {% assign posts = ((site.categories.[series.lower] | sort: "order")) %}
+      {% assign posts = (site.categories.[series.lower] | sort: "order") %}
       {% assign first_post = posts[0] %}
 
-      <div class="series-thumbnail">
-        <a href="{{ first_post.url }}">
-          <img src="{{ series.image_path }}"></img>
-          <div>{{ series.name }}</div>
-          <div class="description">{{ series.description }}</div>
-        </a>
-      </div>
     {% endfor %}
   </section>
 
