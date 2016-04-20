@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: series
 title: Cleaning up your spec/rails helpers
-category: code
 description: "Organizing your RSpec configurations"
+categories: [code, rspec]
+series: rspec
+order: 3
 ---
 
 A common pattern when working on a Rails project is to add all RSpec
@@ -24,6 +26,8 @@ For example your database cleaner config can be stored in
 `spec/support/database_cleaner.rb`.
 
 ~~~ ruby
+require "database_cleaner"
+
 RSpec.configure do |config|
   config.use_transactional_fixtures = false
 

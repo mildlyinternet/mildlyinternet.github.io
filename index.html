@@ -6,11 +6,19 @@ title: Mildly Internet
 {% include main_header.html %}
 
 <div class="site">
+ <h1>Latest Series</h1>
  <section class="series-thumbnails">
     {% for series_hash in site.data.series %}
       {% assign series = series_hash[1] %}
       {% assign posts = (site.categories.[series.lower] | sort: "order") %}
 
+      <div class="series-thumbnail">
+        <a href="{{ posts[0].url }}">
+          <img src="{{series.image_path}}"></img>
+          <div>{{ series.name }}</div>
+          <div class="description">{{ series.description }}</div>
+        </a>
+      </div>
     {% endfor %}
   </section>
 

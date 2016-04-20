@@ -1,24 +1,24 @@
 ---
-layout: post
+layout: series
 title: Clean & Simple FactoryGirl Definitions
-category: code
 description: "Using FactoryGirl to make test data creation simple."
+categories: [code, rspec]
+series: rspec
+order: 1
 ---
-
-## Clean & Simple FactoryGirl Definitions
 
 FactoryGirl is a test data creation library for creating test data in a
 structured and repeatable way. It allows you to succinctly express what types
 of data your tests need and build them without repeating yourself.
 
-### The Factories File
+## The Factories File
 
-The core component of FactoryGirl is the factory definition. A factory
-definition assigns default values for columns to a model when creating the
-model in a test. The creators recommend sticking all your factory definitions
-in one `factories.rb` file, but some apps will be so large that it becomes
-unwieldy. FactoryGirl will autoload factories defined in `spec/factories/` and
-`spec/factories.rb`; for our small blog app this one file will be fine.
+The core component of FactoryGirl is the factory definition. It assigns default
+values for columns in a particular model. The creators recommend sticking all
+your factory definitions in one `factories.rb` file, but some apps will be so
+large that it becomes unwieldy. FactoryGirl will autoload factories defined in
+`spec/factories/` and `spec/factories.rb`. For our small blog app this one file
+will be sufficient.
 
 ~~~ ruby
 # spec/factories.rb
@@ -53,9 +53,9 @@ hash of the attributes to `FactoryGirl.build` as the second argument.
 FactoryGirl.build(:user, first_name: "Joe")
 ~~~
 
-### Sequences
+## Sequences
 
-This is nice, but most apps get a lot more complicated than that. Let's say we
+This is nice, but most apps get a lot more complicated than that. Imagine we
 have a unique constraint on the user's email. If we try to create more than one
 `User` with the default values, it'll error on the unique constraint! So rather
 than specifying a different email in every single test, FactoryGirl provides
@@ -76,16 +76,16 @@ FactoryGirl.define do
 end
 ~~~
 
-Now when a user is generated in your tests, the email attribute will increment,
-ensuring that the model will always satisfy the unique constraint when using
-default values.
+Everytime a user is created the value of `i` will increment, resulting in a
+unique email address. This ensures that the model will always satisfy the unique
+constraint when using default values.
 
 ~~~ ruby
 FactoryGirl.build(:user) # => user1.example.com
 FactoryGirl.build(:user) # => user2.example.com
 ~~~
 
-### Traits
+## Traits
 
 Another concept often repeated in tests is the different roles an object can
 fill. For example, a User with no `joined_on` date might be considered a guest
@@ -133,7 +133,7 @@ overlapping attributes, the last trait applied will win out.
 FactoryGirl.build(:user, :guest, :last_logged_in_a_week_ago, :has_bad_email)
 ~~~
 
-### Associations
+## Associations
 
 Another major part of creating test data is associations, the way that data
 relates to other data. Assuming that we have the following schema:
@@ -196,7 +196,7 @@ end
 Then, in the post and comment factories, we can just reference `author`,
 because now there's a matching factory.
 
-### build vs create
+## build vs create
 
 Throughout this tutorial we've used `FactoryGirl.build` in all our examples.
 This is analogous to `ActiveRecordObject.new`, it initializes the model without
@@ -208,5 +208,5 @@ it off.
 
 You can read more about FactoryGirl at the following links:
 
-https://github.com/thoughtbot/factory_girl
-http://www.rubydoc.info/gems/factory_girl/file/GETTING_STARTED.md
+[https://github.com/thoughtbot/factory_girl](https://github.com/thoughtbot/factory_girl)
+[http://www.rubydoc.info/gems/factory_girl/file/GETTING_STARTED.md](http://www.rubydoc.info/gems/factory_girl/file/GETTING_STARTED.md)

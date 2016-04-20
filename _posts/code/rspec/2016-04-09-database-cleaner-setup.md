@@ -1,14 +1,16 @@
 ---
-layout: post
+layout: series
 title: Database Cleaner with RSpec
-category: code
 description: "Setting up Database Cleaner with RSpec"
+categories: [code, rspec]
+series: rspec
+order: 2
 ---
 
 When writing tests for a Rails application there is a good chance you will need
 to create records in the database. To have reliable tests those records should
 be removed after every run. This is a painful process to do manually. However
-there is a library that handles cleaning up your database after every run.
+there is a library that handles cleaning up the database after every run.
 
 Setting up [database_cleaner](https://github.com/DatabaseCleaner/database_cleaner)
 can be a little tricky, especially if you are not using ActiveRecord.
@@ -28,6 +30,8 @@ ActiveRecord and the transaction strategy the configuration below is all you nee
 Add the following to `spec/rails_helper.rb`
 
 ~~~ ruby
+require "database_cleaner"
+
 RSpec.configure do |config|
   config.use_transactional_fixtures = false
 
@@ -44,7 +48,7 @@ RSpec.configure do |config|
 end
 ~~~
 
-DatabaseCleaner comes with several strategies for cleaning your database after
+DatabaseCleaner comes with several strategies for cleaning the database after
 creating records. For SQL databases the fastest strategy will be transaction
 as transactions are simply rolled back. Read more
 [here](https://github.com/DatabaseCleaner/database_cleaner#what-strategy-is-fastest).
