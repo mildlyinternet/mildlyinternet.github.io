@@ -10,7 +10,7 @@ author: patrick
 
 In [Part 1]({% post_url 2016-04-04-supercharge-resque-and-sidekiq-with-go %}) we
 looked at a way to push jobs onto a queue with Ruby and have a Go program
-consume them. In [Part 2]({% post_url 2016-04-12-superchase-resque-and-sidekiq-with-go-part-2 %})
+consume them. In [Part 2]({% post_url 2016-04-12-supercharge-resque-and-sidekiq-with-go-part-2 %})
 I want to explore
 some real world examples.
 
