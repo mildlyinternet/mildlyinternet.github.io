@@ -1,4 +1,6 @@
 {% assign author = site.data.authors[page.author] %}
+
+{% if author %}
 <footer class="about">
   <div class="profile-picture">
     <img src={{ author.image_path }} width="56px" />
@@ -14,6 +16,7 @@
   </p>
   </div>
 </footer>
+{% endif %}
 
 <footer class="about-devlocker">
   <p>Meet the <a href="/about">writers</a> of MildlyInternet
