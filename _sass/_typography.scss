@@ -82,9 +82,9 @@ blockquote {
 
 .info {
   color: $muted;
-  font-size: 11px;
+  font-size: $font-size-small;
   letter-spacing: 1px;
-  margin-top: 12px;
+  margin-top: $spacing-unit;;
   text-transform: uppercase;
 }
 
