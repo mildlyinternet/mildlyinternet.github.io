@@ -1,9 +1,10 @@
 url: "http://mildlyinternet.com"
+
 markdown: kramdown
 highlighter: rouge
 permalink: none
 
-gems:
+plugins:
   - jekyll-sitemap
 
 sass:

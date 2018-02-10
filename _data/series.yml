@@ -1,5 +1,0 @@
-rspec:
-  name: "RSpec"
-  lower: "rspec"
-  image_path: "/images/series/rspec-logo.png"
-  description: "This series covers lesser known features of RSpec, proper setup / configuration, and testing philosophies."

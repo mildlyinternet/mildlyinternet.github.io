@@ -6,32 +6,20 @@ title: Mildly Internet
 {% include main_header.html %}
 
 <div class="site">
- <section class="series-thumbnails">
-    {% for series_hash in site.data.series %}
-      {% assign series = series_hash[1] %}
-      {% comment %}
-        {% assign posts = (site.categories.[series.lower] | sort: "order") %}
-      {% endcomment %}
-
-    {% endfor %}
-  </section>
-
   <h1 class="spaced">Latest Posts</h1>
 
   <section class="home">
     {% for post in site.posts %}
-      {% unless post.series %}
-        <article class="post-excerpt">
-          <h1><a href={{ post.url }}>{{ post.title }}</a></h1>
-          {{ post.excerpt }}
-          <a href="{{ post.url }}" class="read-more">Read more...</a>
-          <div class="info">
-            <span class="hashtag">#</span>
-            {{ post.date | date: '%B %d, %Y'  }}
-            <span class="category">| {{ post.category }}</span>
-          </div>
-        </article>
-      {% endunless %}
+      <article class="post-excerpt">
+        <h1><a href={{ post.url }}>{{ post.title }}</a></h1>
+        {{ post.excerpt }}
+        <a href="{{ post.url }}" class="read-more">Read more...</a>
+        <div class="info">
+          <span class="hashtag">#</span>
+          {{ post.date | date: '%B %d, %Y'  }}
+          <span class="category">| {{ post.category }}</span>
+        </div>
+      </article>
     {% endfor %}
 
     {% include footer.html %}
