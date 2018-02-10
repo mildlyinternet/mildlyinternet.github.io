@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
-   <title>{{ page.title }}</title>
-   <meta name="author" content="Patrick Koperwas" />
-   {% if page.description == "" %}
-     <meta name="description" content="A blog about the web. sometimes.">
-   {% else %}
-     <meta name="description" content="{{ page.description }}">
-     <meta content="@patkoperwas" content="twitter:site">
-     <meta content="http://mildlyinternet.com{{ page.url }}" name ="twitter:url">
-     <meta content="summary" name ="twitter:content">
-     <meta content="{{ page.title }}" name="twitter:title">
-     <meta content="{{ page.description }}" name: "twitter:description">
-   {% endif %}
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+    <title>{{ page.title }}</title>
+    <meta name="author" content="Patrick Koperwas" />
+    {% if page.description == "" %}
+    <meta name="description" content="A blog about the web. sometimes.">
+    {% else %}
+    <meta name="description" content="{{ page.description }}">
+    <meta content="@patkoperwas" content="twitter:site">
+    <meta content="http://mildlyinternet.com{{ page.url }}" name ="twitter:url">
+    <meta content="summary" name ="twitter:content">
+    <meta content="{{ page.title }}" name="twitter:title">
+    <meta content="{{ page.description }}" name: "twitter:description">
+    {% endif %}
 
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <!-- Homepage CSS -->
+    <link rel="stylesheet" href="/css/application.css" type="text/css" media="screen, projection" />
 
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+    <!-- Google Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+  </head>
+  <body>
+    {{ content }}
+  </body>
 
-   <!-- Google Web Fonts -->
-   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
-   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
-   <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700' rel='stylesheet' type='text/css'>
-   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-   </script>
-</head>
-<body>
-  {{ content }}
-</body>
-{% include google_analytics.html %}
+  {% include google_analytics.html %}
 </html>

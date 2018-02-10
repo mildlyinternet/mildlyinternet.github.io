@@ -1,22 +1,26 @@
+$header-width: 960px;
+
 .main-header {
-  font-family: $headings-font-family;
-  margin-bottom: 48px;
-  padding: 48px 0;
+  background-color: $lightest-gray;
+  border-bottom: 1px solid #ddd;
+  border-top: 5px solid $red;
+  margin-bottom: $spacing-bottom-margin;
+  padding: $spacing-unit;
 
   @media (max-width: $breakpoint-mobile) {
-    padding: 5% 0;
+    padding: 5%;
   }
 
   .content {
     margin: 0 auto;
-    padding: 0 $side-gutter;
-    width: $body-width;
+    width: $header-width;
   }
 
   .home-link {
-    font-size: 22px;
-    font-weight: 700;
-    color: #333;
+    @include unstyled-link;
+
+    font-family: $font-family-headings;
+    font-weight: $font-weight-bold;
   }
 
   .other-links {
@@ -27,33 +31,8 @@
     }
 
     a {
-      font-family: $body-font-family;
+      @include unstyled-link;
       margin-right: 12px;
     }
   }
 }
-
-.main-header-muted {
-  font-family: "Merriweather", sans-serif;
-  font-size: 12px;
-  margin: 24px auto;
-  padding: 24px $side-gutter;
-  width: $body-width;
-
-  &.header-series {
-    width: 960px;
-
-    @media (max-width: 960px) {
-      width: $body-width;
-    }
-  }
-
-  a {
-    color: $muted;
-
-    &:hover {
-      color: $red;
-    }
-  }
-}
-
