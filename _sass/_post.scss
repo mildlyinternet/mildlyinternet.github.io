@@ -1,19 +1,19 @@
 .post {
   .date {
     color: $muted;
-    font-size: 11px;
+    font-size: $font-size-small;
     text-transform: uppercase;
   }
 
   header {
-    padding: 0 0 12px 0;
-    font-weight: 400;
-    margin-bottom: 48px;
+    padding: 0 0 $spacing-unit 0;
+    font-weight: $font-weight-normal;
+    margin-bottom: $spacing-bottom-margin;
   }
 
   img {
-    width: 940px;
     margin: 24px ($site-width - 940) / 2;
+    width: 940px;
 
     @media (max-width: 940px) {
       max-width: 100%;
@@ -27,7 +27,6 @@
   }
 
   pre {
-    border: 1px solid #f0f0f0;
     font-size: 90%;
     overflow: auto;
     padding: $spacing-unit;
